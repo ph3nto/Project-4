@@ -1,0 +1,50 @@
+// ======================================
+//  Variables
+// ======================================
+
+
+// Base Colors 
+$white:#fff;
+$grey:#777;
+$cyan:#58e1c1;
+$blue:#51ddfc;
+$teal:#80e8d1;	
+$light-coral:#e4757a;
+$purple:#927bc1;
+$green:#63cc82;
+$orange:#fd7856;
+
+// Color
+$color-text: $grey;
+$color-navigation: $white;
+$color-primary: $cyan; 
+$color-link: $blue;
+$color-link-visited: lighten($blue, 30%);
+$color-link-hover: darken($blue, 25%);
+
+
+// Button colors 
+
+$btn-colors: (
+	default: $blue,
+	success: $green,
+	error: $light-coral,
+	warning: $orange,
+	info: $purple
+	);
+
+// Fonts
+$font-stack-primary: 'Lato', sans-serif;
+
+// Font weight 
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+// Layout
+$max-width: 1400px;
+
+// Breakpoints
+$break: 768px;
