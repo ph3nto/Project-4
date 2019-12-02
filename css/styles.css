@@ -1,153 +1,19 @@
-/* ============================================= */
-/*              Base styles                      */
-/* ============================================= */
-* {
-  font-family: "Lato", sans-serif;
-  color: #777;
-  box-sizing: border-box;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 14 |     color: $color-primary;
+ *    |            ^^^^^^^^^^^^^^
+ *    '
+ *   scss\base\_typography.scss 14:12  @import
+ *   scss\base\_index.scss 4:9         @import
+ *   scss\styles.scss 5:9              root stylesheet */
 
-/* ============================================= */
-/*              Typography                       */
-/* ============================================= */
-p {
-  line-height: 1.45em;
-}
-
-a {
-  text-decoration: none;
-}
-
-.headline-primary {
-  color: #58e1c1;
-  margin-left: 10px;
-}
-
-.headline-secondary {
-  font-weight: 300;
-  color: #777;
-}
-
-.link {
-  color: #51ddfc;
-  font-weight: 700;
-}
-
-.blockquote {
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 8px solid #58e1c1;
-  border-radius: 5px;
-}
-
-/* ============================================= */
-/*              Navigation                       */
-/* ============================================= */
-.nav {
-  padding-left: 0;
-  flex-basis: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-link {
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px 0;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  width: 100%;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 14 \2502      color: $color-primary;\d\a    \2502             ^^^^^^^^^^^^^^\a    \2575 \a   scss\\base\\_typography.scss 14:12  @import\a   scss\\base\\_index.scss 4:9         @import\a   scss\\styles.scss 5:9              root stylesheet";
 }
-
-.nav-link:hover {
-  color: #fff;
-  background-color: #58e1c1;
-}
-
-.btn {
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-.default {
-  background-color: #51ddfc;
-}
-
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
-}
-
-.success {
-  background-color: #63cc82;
-}
-
-.warning {
-  background-color: #fd7856;
-}
-
-/* ============================================= */
-/*              Images                           */
-/* ============================================= */
-.img-avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  padding: 13px;
-  border: 1px solid #ccc;
-}
-
-.img-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ============================================= */
-/*              Forms                            */
-/* ============================================= */
-.form {
-  flex-basis: 100%;
-}
-
-.input {
-  display: block;
-  width: 94%;
-  margin: 10px auto 0;
-  border: none;
-  padding: 10px;
-  border-bottom: 5px solid #58e1c1;
-}
-
-.hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-/*# sourceMappingURL=styles.css.map */
