@@ -209,8 +209,7 @@ a {
 .form {
   flex-basis: 100%;
 }
-
-.input {
+.form .input {
   display: block;
   width: 94%;
   margin: 10px auto 0;
@@ -218,8 +217,7 @@ a {
   padding: 10px;
   border-bottom: 5px solid #58e1c1;
 }
-
-.hidden {
+.form .hidden {
   position: absolute;
   left: -10000px;
   top: auto;
