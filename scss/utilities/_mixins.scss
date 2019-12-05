@@ -1,7 +1,16 @@
-@mixin img {
+@mixin center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    max-width: 100%;
+}
+
+@mixin flexy(
+    $disp: flex,
+    $dir: null,
+    $wrap: null,
+    $just: null) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
 }

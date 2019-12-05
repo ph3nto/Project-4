@@ -1,29 +1,46 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
 .btn {
   margin-top: 15px;
-  width: 100%;
-  color: #fff;
+  width: $max-width;
+  color: $white;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+  &:hover {
+    background-color: $color-link-hover;
+  }
+  &:visited {
+    background-color: $color-link-visited;
+  }
+  @media (min-width: $break) {
+  padding: 10px 30px;
+
+  & + .btn {
+  margin-left: 10px;
+  }
+  }
 }
 
 .default {
-  background-color: #51ddfc;
+  background-color: $blue;
 }
 
 .error {
-  background-color: #e4757a;
+  background-color: $coral;
 }
 
 .info {
-  background-color: #927bc1;
+  background-color: $purple;
 }
 
 .success {
-  background-color: #63cc82;
+  background-color: $green;
 }
 
 .warning {
-  background-color: #fd7856;
+  background-color: $orange;
 }

@@ -8,11 +8,17 @@ $white:#fff;
 $grey:#777;
 $cyan:#58e1c1;
 $blue:#51ddfc;
+$sky-blue:#7ee6fd;
+$dark-blue:#4da2bb;
 $teal:#80e8d1;	
-$light-coral:#e4757a;
+$light-coral:#ec9fa3;
+$coral:#e4757a;
 $purple:#927bc1;
+$light-purple: #deb2ee;
 $green:#63cc82;
-$orange:#fd7856;
+$dark-green:#88d9a0;
+$orange: #fd7856;
+$light-orange:#fd9f85;
 
 // Color
 $color-text: $grey;
@@ -22,29 +28,31 @@ $color-link: $blue;
 $color-link-visited: lighten($blue, 30%);
 $color-link-hover: darken($blue, 25%);
 
-
-// Button colors 
-
-$btn-colors: (
-	default: $blue,
-	success: $green,
-	error: $light-coral,
-	warning: $orange,
-	info: $purple
-	);
+// Grid colors 
+$grid-colors: (
+	$purple,
+	$orange,
+	$light-purple,
+	$sky-blue,
+	$dark-green,
+	$dark-blue,
+	$light-coral,
+	$light-orange,
+	$coral,
+	$green,
+	$blue,
+	$teal
+);
 
 // Fonts
 $font-stack-primary: 'Lato', sans-serif;
 
 // Font weight 
-$font-weight-thin: 100;
 $font-weight-light: 300;
-$font-weight-normal: 400;
 $font-weight-bold: 700;
-$font-weight-bolder: 900;
 
 // Layout
-$max-width: 1400px;
+$max-width: 100%;
 
 // Breakpoints
 $break: 768px;
